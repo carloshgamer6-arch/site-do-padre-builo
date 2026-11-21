@@ -1,0 +1,185 @@
+@charset "UTF-8" ;
+
+/* A section contactos da pagina contacto */
+
+main > .contactos{
+    width: 100%;
+    height: auto;
+    padding: 120px 0 120px 0;
+    border-top: 1px solid var(--paragrafo);
+    border-bottom: 1px solid var(--paragrafo);
+    background-color: var(--body-color);
+    justify-content: space-evenly;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+main > .contactos > .item{
+    padding: 30px;
+    width: 18%;
+    height: auto;
+    background-color: transparent;
+    border: 1px solid var(--paragrafo);
+}
+
+main > .contactos > .item > svg{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 0px;
+    color: var(--cor1);
+}
+
+main > .contactos > .item > h1{
+    font-family: var(--font1);
+    color: var(--cor1);
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+main > .contactos > .item > p{
+    line-height: 1.2;
+    font-family: var(--font2);
+    font-size: 14px;
+}
+
+/* A section encontrar da pagina contactos */
+
+main > .encontrar{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+main > .encontrar > div{
+    width: 90%;
+    background-color: transparent;
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+main > .encontrar > div > .texto {
+    width: 45%;
+    height: 100%;
+    background-color: transparent;
+    float: left;
+}
+
+main > .encontrar > div > .texto  > h1{
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+main > .encontrar > div > .texto > h2{
+    font-family: var(--font2);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2;
+    margin-bottom: 30px;
+    color: #53514F;
+}
+
+main > .encontrar > div > .texto > p{
+    font-family: var(--font2);
+    font-size: 14px;
+    margin-left: 15px;
+    color: #53514F;
+}
+
+main > .encontrar > div > .texto > p > span{
+    font-size: 16px;
+    color: var(--cor2);
+}
+
+
+main > .encontrar > div > .pronto{
+    width: 50%;
+    height: auto;
+    background-color: var(--cor1);
+}
+
+main > .encontrar > div > .pronto > h1{
+    color: white;
+    margin: 40px 0 20px 40px;
+    font-family: var(--font1);
+    font-size: 25px;
+}
+
+main > .encontrar > div > .pronto > p{
+    color: white;
+    margin: 0px 0 40px 40px;
+    font-family: var(--font2);
+    font-size: 14px;
+}
+
+main > .encontrar > div > .pronto > a{
+    margin: 0px 0 20px 40px;
+    padding: 20px 30px 20px 30px;
+    background-color: var(--cor2);
+    text-decoration: none;
+    color: var(--cor1);
+    font-family: var(--font2);
+    font-weight: 600;
+}
+
+main > .encontrar > div > .pronto > a:hover{
+    background-color: var(--amarelo);
+}
+
+main > .encontrar > div > .pronto > a > svg{
+    margin: 0px 0 -8px 5px;
+    font-size: 12px;
+}
+
+
+@media  screen and (max-width: 992px) {
+    main > .contactos > .item{
+        width: 38%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    main > .encontrar{
+        width: 100%;
+        height: 500px;
+    }
+
+    main > .encontrar > div{
+        width: 90%;
+        height: 450px;
+    }
+
+    main > .encontrar > div > .texto{
+        width: 100%;
+        height: 50%;
+    }
+
+    main > .encontrar > div > .pronto{
+        width: 100%;
+        height: 55%;
+        margin-top: 40px;
+    }
+
+}
+@media  screen and (max-width: 575.8px) {
+    main > .contactos > .item{
+        width: 75%;
+    }
+    
+    main > .encontrar > div > .pronto{
+        margin-top: 100px;
+        float: left;
+    }
+
+    main > .encontrar > div > .pronto > p{
+        margin-right: 20px;
+    }
+
+}

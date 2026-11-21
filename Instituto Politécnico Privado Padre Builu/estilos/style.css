@@ -1,0 +1,1811 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #601F1B;
+    --cor2: #D5B365;
+    --amarelo: #cf9f62;
+    --bt-hover: #78423B;
+    --body-color: #fcf9f3;
+    --section-color: #EFEAE2;
+    --paragrafo: #C5C1BB;
+    --suave: #8a7a72;
+    --font1: "Noto Sans Georgian", ;
+    --font2: "Manrope", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html, body{
+    margin: 0;
+    background-color: var(--body-color);
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  Header*/
+
+header{
+    width: 100%;
+    height: 90px;
+    background-color: #fcf9f3f5;
+    margin-top: -15px;
+    padding-bottom: 10px;
+    z-index: 6;
+    position: fixed;
+    top: 0;
+}
+
+header > p{
+    width: 100%;
+    background-color: var(--cor1);
+    font-family: var(--font2);
+    padding: 15px 0 10px 0;
+    font-size: 600;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: var(--body-color);
+}
+
+/* Logo */
+
+header > .logo{
+    width: 20%;
+    height: 80%;
+    float: left;
+    background-color: transparent;
+    margin-top: 15px;
+}
+
+header > .logo > a > img{
+    width: 200px;
+    height: 65px;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+/* Navbar */
+
+header > .nav{
+    width: 70%;
+    height: 50px;
+    background-color: transparent;
+    margin-top: 35px;
+    margin-right: 4%;
+    display: flex;
+    justify-content: right;
+    border: none;
+    float: right;
+}
+
+header > .nav > ul{
+    display: flex;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor1);
+}
+
+header > .nav > ul > li{
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+header > .nav > ul > li > a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 13px;
+    font-family: var(--font2);
+}
+
+header > .nav > ul > li > a:hover{
+    column-rule: var(--cor1);
+}
+
+header > .nav > a{
+    height: 30px;
+    width: 120px;
+    color: white;
+    margin: 0px 0px 10px 15px;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: var(--font2);
+    background-color: var(--cor1);
+    border: none;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+
+header > .nav > a:hover{
+    background-color: var(--bt-hover);
+}
+
+/* Imagem do fundo */
+
+main > .hero{
+    width: 100%;
+    margin-top: 85px;
+    height: 600px;
+    background-image: linear-gradient(
+    to right, #601F1B 0%, #641414cc 40%, #64141433 70%, #64141400 80%), url('../imagens/bg.jpg');
+    background-size: cover;
+     background-position: center;
+}
+
+main > .hero > .hero-conteudo{
+    width: 60%;
+    display: fixed;
+    margin-left: 5%;
+    background-color: transparent;
+    height: 80%;
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 100px 0px 0 0 ;
+    max-width: 600px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: aparecer 0.6s ease forwards;
+}
+
+header > .burguer{
+    display: none;
+}
+
+/* O efeito de aprecer as letras quando atualiza */
+
+.delay1 {
+    animation-delay: .2s;
+}
+
+.delay2 {
+    animation-delay: .4s;
+}
+
+.delay3 {
+    animation-delay: .8s;
+}
+
+.delay4 {
+    animation-delay: 1s;
+}
+
+.delay5 {
+    animation-delay: 1.2s;
+}
+
+.delay5 {
+    animation-delay: 1.4s;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Continuacao do hero-conteudo */
+
+main > .hero > .hero-conteudo > h3{
+    color: var(--cor2);
+}
+
+main > .hero > .hero-conteudo > h3{
+    font-family: var(--font2);
+    margin: 0 0 10px 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+main > .hero > .hero-conteudo > h3 > button{
+    background-color: transparent;
+    width: 30px;
+    height: 10px;
+    border: none;
+    margin:  0px 25px -5px 0px;
+    border-radius: 3px;
+}
+
+main > .hero > .hero-conteudo > h3 > button >span{
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: var(--cor2);
+    border-radius: 3px;
+}
+
+
+main > .hero > .hero-conteudo > h1{
+    font-family: var(--font1);
+    font-size: 94px;
+    color: white;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+    
+}
+
+
+main > .hero > .hero-conteudo > h1 > em{
+    margin-top: -5px;
+    color: var(--cor2);
+    margin-left: 5px;
+}
+
+main > .hero > .hero-conteudo > p{
+    font-family: var(--font2);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--paragrafo);
+    width: 95%;
+    margin: 10px 0 40px 0 ;
+}
+
+main > .hero > .hero-conteudo > .botoes{
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+
+main > .hero > .hero-conteudo > .botoes > a > button{
+    font-family: var(--font2);
+    font-weight: 600;
+    font-size: 16px;
+    width: 210px;
+    background-color: transparent;
+    flex-flow: row wrap;
+    color: white;
+    text-decoration: none;
+    height: 60px;
+    text-align: center;
+    border: none;
+}
+
+main > .hero > .hero-conteudo > .botoes > a > .amarelo{
+    margin-right: 20px;
+    background-color: var(--cor2);
+    color: var(--cor1);
+}
+
+main > .hero > .hero-conteudo > .botoes >  a >.amarelo:hover{
+    background-color: var(--amarelo);
+}
+
+main > .hero > .hero-conteudo > .botoes > a > .amarelo > svg{
+    margin-bottom: -8px;
+    width: 20px;
+}
+
+main > .hero > .hero-conteudo > .botoes > a >.castanho{
+    background-color: transparent;
+    border: 1px solid  white;
+}
+
+main > .hero > .hero-conteudo > .botoes > a > .castanho:hover{
+    background-color: var(--bt-hover);
+}
+
+/* A parte da A nossa essência */
+
+main > .essencia{
+    background-color: var(--body-color);
+    height: auto;
+    padding-bottom: 30px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+main > .essencia > .paragrafo{
+    background-color: transparent;
+    width: 90%;
+    height: 180px;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-top: 60px;
+}
+
+main > .essencia > .paragrafo > h1{
+    font-family: var(--font2);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cor1);
+    margin-left: 10px;
+}
+
+main > .essencia > .paragrafo > p{
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 60px;
+    text-indent: 5px;
+    margin-top: 10px;
+    display: inline-block;
+    background-color:  transparent;
+    width: 100%;
+}
+
+main > .essencia > .paragrafo > div > p{
+    float: right;
+    width: 47%;
+    background-color: transparent;
+    margin-top: -130px;
+    height: 50%;
+    color: var(--suave);
+    font-family: var(--font2);
+    font-size: 16px;
+}
+
+main > .essencia > .fe{
+    width: 90%;
+    background-color: transparent;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: auto;
+    padding-top: 20px;
+    margin-top: 30px;
+    display: flex;
+    height: 61%;
+    border-top: 1px solid var(--section-color);
+}
+
+
+main > .essencia > .fe > .item{
+    width: 30%;
+    background-color: transparent;
+    margin: 20px 0 0 0;
+    border-bottom: 1px solid var(--section-color);
+    padding: 5px 5px 0px 5px;
+    height: auto;
+}
+
+main > .essencia > .fe > .item > img{
+    width: 100%;
+    height: 50%;
+}
+
+main > .essencia > .fe > .item > svg{
+    color: var(--cor1);
+    margin: 10px 0 0 0px;
+    width: 35px;
+    height: 35px;
+}
+
+main > .essencia > .fe > .item > span{
+    font-family: var(--font1);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--cor2);
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    float: right;
+    margin-top: 10px;
+    display: inline;
+    text-align: center;
+}
+
+main > .essencia > .fe > .item > h1{
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 40px;
+    color: var(--cor1);
+    margin-bottom: 5px;
+}
+
+main > .essencia > .fe > .item > p{
+    font-family: var(--font2);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--suave);
+}
+
+/* Section das ofertas */
+
+main > .oferta{
+    background-color: var(--section-color);
+    height: auto;
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+main > .oferta > .texto{
+    width: 90%;
+    height: 23%;
+    background-color: transparent;
+    margin-left: 50px;
+}
+
+main > .oferta > .texto > h1{
+    font-family: var(--font2);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--cor1);
+}
+
+main > .oferta > .texto > h2{
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 60px;
+    margin-top: 10px;
+    width: 50%;
+    background-color: transparent;
+    display: inline-block;
+}
+
+main > .oferta > .texto > div{
+    width: 45%;
+    float: right;
+}
+
+main > .oferta > .texto > div > p{
+    font-family: var(--font2);
+    color: var(--suave);
+    font-size: 16px;
+}
+
+/* Flexbox da section oferta */
+
+main > .oferta > .caixa{
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+main > .oferta > .caixa > .item{
+    width: 30%;
+    height: 520px;
+    background-color: white;
+    border: 1px solid var(--paragrafo);
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+main > .oferta > .caixa > .item > img{
+    width: 100%;
+    height: 50%;
+}
+
+main > .oferta > .caixa > .item > h1{
+    margin: 20px 0 0 20px;
+    font-family: var(--font2);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cor1);
+}
+
+main > .oferta > .caixa > .item > h2{
+    margin: 10px 0 0 20px;
+    font-family: var(--font1);
+    font-size: 36px;
+    font-weight: 600;
+    color: black;
+}
+
+main > .oferta > .caixa > .item > h3{
+    margin: 10px 10px 20px 20px;
+    font-family: var(--font2);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--suave);
+}
+
+main > .oferta > .caixa > .item > a{
+    text-decoration: none;
+    color: var(--cor1);
+    font-family: var(--font2);
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 0 0 20px;
+}
+
+main > .oferta > .caixa > .item > a:hover{
+    text-decoration: underline;
+}
+
+main > .oferta > .caixa > .item > a > svg{
+    width: 25px;
+    margin-bottom: -8px;
+}
+
+/* /* A section futuro  */
+main > .futuro{
+    width: 100%;
+    height: auto;
+    padding-bottom: 70px;
+    background-color: var(--cor1);
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+main > .futuro > .texto{
+    width: 50%;
+    padding: 50px 0 50px 0;
+    height: auto;
+    float: left;
+    background-color: transparent;
+    margin-bottom: 0px;
+}
+
+main > .futuro > .texto > h1{
+    color: var(--cor2);
+    font-size: 12px;
+    font-weight: 600;
+    font-family: var(--font2);
+    margin: 60px 0 15px 70px;
+}
+
+main > .futuro > .texto > h2{
+    font-family: var(--font1);
+    font-weight: bolder;
+    font-size: 60px;
+    color: white;
+    margin: 0px 0 0px 60px;
+}
+
+main > .futuro > .texto > p{
+    margin: 20px 0 0px 60px;
+    font-family: var(--font2);
+    color: var(--paragrafo);
+    line-height: 2;
+    font-weight: 500;
+}
+
+/* A div btn da section futuro */
+
+ main > .futuro > .btn{
+   background-color: transparent;
+   width: 40%;
+   height: 200px;
+   border-left: 1px solid var(--paragrafo);
+   margin-top: 150px;
+}
+
+main > .futuro > .btn > h1{
+    color: white;
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 30px;
+    margin: 20px 0 10px 30px;
+}
+
+main > .futuro > .btn > h2{
+    font-family: var(--font2);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--paragrafo);
+    margin: 5px 0 40px 30px;
+}
+
+main > .futuro > .btn > a{
+    width: 250px;
+    height: 30px;
+    padding: 20px;
+    background-color: var(--cor2);
+    margin: 5px 0 20px 30px;
+    color: var(--cor1);
+    font-family: var(--font2);
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    text-decoration: none;
+}
+
+main > .futuro > .btn > a:hover{
+    background-color: var(--amarelo);
+}
+
+main > .futuro > .btn > a > svg{
+    margin: 0 0 -8px 5px;
+}
+
+/* O texto antes da tabelas */
+
+main > .matricula{
+    width: 90%;
+    background-color: transparent;
+    margin: auto;
+    height: auto;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin-top: 100px;
+    position: relative;
+}
+
+main > .matricula > .titulo{
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+}
+
+main > .matricula > .titulo > p{
+    color: var(--cor1);
+    font-family: var(--font2);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+main > .matricula > .titulo > h1{
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 70px;
+    margin: 10px 0 0 0;
+}
+
+main > .matricula > .paragrafo{
+    width: 45%;
+    height: 50%;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    bottom: 0%;
+}
+
+main > .matricula > .paragrafo{
+    font-family: var(--font2);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--suave);
+}
+
+
+
+/* Section da tabela de precos */
+
+main > .propina{
+    background-color: transparent;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    padding-top: 30px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* A parte da incricao e reconfirmacao */
+
+main > .propina > .inscricao{
+    width: 90%;
+    height: 480px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    background-color: var(--cor1);
+}
+
+/* A parte doo head do div inscricao*/
+
+main > .propina > .inscricao > .head{
+    width: 85%;
+    margin: auto;
+    background-color: transparent;
+    margin-top: 10px;
+    padding: 30px 0 10px 0 ;
+    border-bottom: 1px solid var(--paragrafo);
+    font-family: var(--font2);
+    color: var(--cor2);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* A parte doo novo do div inscricao*/
+
+main > .propina > .inscricao > .novo{
+    padding: 5px 0 15px 0;
+    width: 85%;
+    background-color: transparent;
+    margin: auto;
+    border-bottom: 1px solid var(--paragrafo);
+}
+
+main > .propina > .inscricao > .novo > p {
+    font-family: var(--font2);
+    color: var(--body-color);
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+main > .propina > .inscricao > .novo > h1{
+    color: white;
+    font-family: var(--font1);
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/*  A parte doo instituto do div inscricao*/
+
+main > .propina > .inscricao > .instituto{
+    width: 85%;
+    margin: auto;
+    padding: 15px 0 15px 0;
+    background-color: transparent;
+    border-bottom: 1px solid var(--paragrafo);
+}
+
+main > .propina > .inscricao > .instituto > p{
+    margin-top: 5px;
+    font-family: var(--font2);
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--body-color);
+}
+
+main > .propina > .inscricao > .instituto > h1{
+    color: white;
+    font-family: var(--font1);
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/*  A parte do botao do div inscricao*/
+
+main > .propina > .inscricao > .botao{
+    width: 85%;
+    width: 85%;
+    margin: auto;
+    padding: 15px 0 15px 0;
+    background-color: transparent;
+}
+
+main > .propina > .inscricao > .botao > p{
+    margin: 10px 0 0 10px;
+    font-family: var(--font2);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--body-color);
+}
+
+main > .propina > .inscricao > .botao > a > button{
+    background-color: var(--cor2);
+    width: 100%;
+    border: none;
+    margin-top: 10px;
+    height: 50px;
+    font-family: var(--font2);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+main > .propina > .inscricao > .botao > a > button:hover{
+    background-color: var(--amarelo
+    );
+}
+
+main > .propina > .inscricao > .botao > a > button > svg{
+    margin: 0 0 -8px 5px;
+}
+
+
+/* A parte da tabela de precos */
+
+main > .propina > .tabela{
+    width: 100%;
+    height: 510px;
+    float: left;
+    background-color: transparent;
+    border: 1px solid var(--paragrafo);
+}
+
+
+main > .propina > .tabela > .head{
+    background-color: var(--section-color);
+    display: flex;
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--paragrafo);
+}
+
+main > .propina > .tabela > .head > .item{
+    background-color: transparent;
+    width: 32%;
+    height: 35px;
+    padding-top: 20px;
+    text-align: center;
+    font-family: var(--font2);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--paragrafo);
+}
+
+/* A parte do body da tabela */
+
+main > .propina > .tabela > .caloiro{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    background-color: transparent;
+    border-bottom: 1px solid var(--paragrafo);
+}
+
+/* A parte do body da tabela na parte das classes */
+
+main > .propina > .tabela  > .caloiro > .classe{
+    font-family: var(--font1);
+    color: var(--cor1);
+    font-size: 25px;
+    font-weight: 600;
+    margin: 30px 0 0 20px;
+}
+
+main > .propina > .tabela  > .caloiro > div > h1{
+    font-family: var(--font2);
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+main > .propina > .tabela  > .caloiro > div > p{
+    font-family: var(--font2);
+    font-weight: 500;
+    font-size: 12px;
+    color: black;
+    margin-top: 5px;
+    text-align: center;
+}
+
+main > .propina > .tabela  > .caloiro > .descontos > h1{
+    text-align: right;
+    margin-right: 15px;
+}
+
+main > .propina > .tabela  > .caloiro > .descontos > p{
+    margin-right: 15px;
+}
+
+/* O paragrafo do fim da tabela */
+
+main > .propina > .tabela > .para{
+    background-color: var(--section-color);
+    height: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--paragrafo);
+    padding: 10px;
+}
+
+/* Section vida escolar */
+
+main > .escolar{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+main > .escolar > .texto{
+    width: 35%;
+    height: 4vh;
+}
+
+main > .escolar > .texto > h1{
+    margin: 20px 0 0 70px;
+    font-family: var(--font2);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--cor1);
+}
+
+main > .escolar > .texto > h2{
+    font-size: 60px;
+    font-family: var(--font1);
+    font-weight: 600;
+    color: black;
+    margin: 0 0 0 70px;
+}
+
+main > .escolar > .item{
+    width: 30%;
+    background-color: transparent;
+    margin-top: 20px;
+    border-top: 2px solid var(--cor2);
+}
+
+main > .escolar > .item > svg{
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    color: var(--cor1);
+}
+
+main > .escolar > .item > h1{
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 35px;
+}
+
+main > .escolar > .item > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--suave);
+}
+
+/* A parte do rodape */
+
+footer{
+    background-color: white;
+    border-top: 1px solid var(--paragrafo);
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+}
+
+footer > .container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 90%;
+    height: auto;
+    padding-bottom: 20px;
+    background-color: transparent;
+    margin: auto;
+    border-bottom: 1px solid var(--paragrafo);
+}
+
+/* A parte que tem o logotipo la no footer */
+
+footer > .container > .logo{
+    background-color: transparent;
+    width: 40%;
+    height: auto;
+}
+
+footer > .container > .logo > img{
+    width: 350px;
+    height: 110px;
+    display: inline;
+}
+
+footer > .container > .logo > h1{
+    margin-top: 10px;
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 30px;
+    color: #53514f;
+    margin-left: 20px;
+}
+
+/* O flebox do footer */
+
+footer > .container > .flexbox{
+    width: 30%;
+    height: auto;
+    background-color: transparent;
+}
+
+footer > .container > .flexbox >h1{
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--cor1);
+    margin-left: 10px;
+}
+
+footer > .container > .flexbox > p{
+    font-family: var(--font2);
+    font-weight: 500;
+    font-size: 14px;
+    color: black;
+    margin: 10px 0 10px 10px;
+}
+
+footer > .container > .flexbox > p > a{
+    text-decoration: none;
+    color: var(--suave);
+}
+
+footer > .container > .flexbox > p >a:hover{
+    text-decoration: underline;
+}
+
+/* A ultima parte do footer */
+
+footer > .fim{
+    width: 90%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin: auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+footer > .fim > div{
+    width: auto;
+    background-color: transparent;
+}
+
+footer > .fim > div > p{
+    font-family: var(--font2);
+    color: var(--suave);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* As medias queries */
+
+@media screen and (max-width: 992px) {
+    header{
+        width: 100%;
+        height: 80px;
+        background-color: white;
+        margin-top: -15px;
+        padding-bottom: 10px;
+    }
+
+    /* Logo */
+
+    header > .logo > a> img{
+        width: 205px;
+        height: 65px;
+        margin-left: 10%;
+        margin-top: 5px;
+    }
+
+    /* Navbar */
+
+    header > .nav{
+        margin-top: 0px;
+       z-index: 3;
+       display: none;
+       width: 60%;
+       height: 335px;
+       margin: 0;
+       padding: 0;
+       position: absolute;
+       top: 100px;
+       right: 0;
+       background-color: white;
+       float: right;
+       flex-direction: column;
+    }
+
+    header > .ativo{
+        display: block;
+    }
+  
+
+    header > .nav > ul{
+        background: transparent;
+        width: 85%;
+        border-radius: 8px;
+        position: relative;
+    }
+        
+    header > .nav > ul{
+        flex-direction: column;
+        text-shadow: none;
+    }
+    
+    header > .nav > ul > li{
+        width: 105%;
+        height: 30px;
+        margin-left: 0;
+        background-color: transparent;
+        margin-top: 20px;
+        text-shadow: none;
+        font-size: 14px;
+        border-bottom: .5px solid var(--cor1);
+    }
+    
+    header > .nav > ul > li > a{
+        font-size: 14px;
+        font-weight: 500;
+        padding-top: 20px;
+        width: 300px;
+    }
+    
+    header > .nav > .btn{
+        font-size: 14px;
+        font-weight: 500;
+        padding: 0;
+        width: 80%;
+        margin-top: 0px;
+        text-align: left;
+        margin-left: 40px;
+        background-color: transparent;
+        color: black;
+    }
+    
+    header > .nav > .btn:hover{
+        background-color: transparent;
+    }
+    
+
+    /* Menu burguer */
+
+    header > .burguer{
+        background-color: transparent;
+        margin-top: 35px;
+        width: 50px;
+        height: 40px;
+        float: right;
+        margin-right: 1%;
+        display: inline;
+        flex-direction: column;
+        justify-content: right;
+        cursor: pointer;
+        z-index: 10;
+        text-align: center;
+        border: none;
+    }
+    
+    header > .burguer > span{
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #222;
+        border-radius: 10px;
+        margin: 5px 0;
+        text-align: right;
+    }
+
+
+    /* Imagem do fundo */
+
+    main > .hero{
+        max-height: 500px;
+    }
+
+    main > .hero > .hero-conteudo{
+        width: 70%;
+        height: 80%;
+        z-index: 2;
+        padding: 120px 0px 0 0 ;
+    }
+
+    main > .hero > .hero-conteudo > h1{
+        font-size: 60px;
+        margin-bottom: 0px;
+    }
+
+    main > .hero > .hero-conteudo > p{
+        font-family: var(--font2);
+        font-weight: 500;
+        font-size: 16px;
+        color: var(--paragrafo);
+        width: 95%;
+        margin: 10px 0 20px 0 ;
+    }
+
+    main > .hero > .hero-conteudo > .botoes{
+        width: 100%;
+        height: 60px;
+        margin-top: 20px;
+    }
+
+    main > .hero > .hero-conteudo > .botoes > button{
+        padding: 0px;
+        font-size: 10px;
+        width: 100%;
+    }
+
+    /* A parte da A nossa essência */
+
+    main > .essencia{
+        width: 100%;
+    }
+
+    main > .essencia > .paragrafo{
+        height: auto;
+    }
+    
+
+    main > .essencia > .paragrafo > p{
+        font-family: var(--font1);
+        font-weight: 600;
+        font-size: 60px;
+        width: 100%;
+        height: 10%;
+    }
+
+    main > .essencia > .paragrafo > div > p{
+        float: left;
+        width: 70%;
+        margin-top: -50px;
+        font-size: 16px;
+    }
+
+    main > .essencia > .fe{
+        width: 100%;
+    }
+
+    main > .essencia > .fe > .item > img{
+    width: 100%;
+    height: 45%;
+}
+
+    /* Flexbox da section oferta */
+
+    main > .oferta > .texto > h2{
+        font-size: 40px;
+        width: 70%;
+    }
+
+    main > .oferta > .texto > div{
+        width: 80%;
+        float: left;
+        margin-top: -30px;
+        margin-bottom: 40px;
+    }
+
+    main > .oferta > .caixa > .item{
+        width: 46%;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    main > .oferta > .caixa > .item > img{
+        width: 100%;
+        height: 45%;
+    }
+
+    main > .oferta > .caixa > .item > h2{
+        font-size: 32px;
+    }
+
+    /* A section futuro */
+
+    main > .futuro{
+        padding-bottom: 0px;
+    }
+
+    main > .futuro > .texto{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    main > .futuro > .texto > p{
+        margin: 20px 20px 0px 60px;
+        font-family: var(--font2);
+        color: var(--paragrafo);
+        font-weight: 500;
+    }
+
+
+    /* A div btn da section futuro */
+
+    main > .futuro > .btn{
+        height: 150px;
+        width: 100%;
+        margin: 0px 0 40px 60px;
+    }
+
+    main > .futuro > .btn > h1{
+        margin-top: 0;
+    }
+
+    /* Section da tabela de precos */
+
+    main > .propina{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* A parte da incricao e reconfirmacao */
+
+    main > .propina > .inscricao{
+        width: 95%;
+        margin: auto;
+        height: 480px;
+        margin-bottom: 50px;
+    }
+
+    /* A parte da tabela de precos */
+
+    main > .propina > .tabela{
+        width: 95%;
+        float: none;
+        margin: auto;
+    }
+
+    main > .propina > .tabela > .head > .item{
+        font-size: 14px;
+    }
+
+    /* A parte do body da tabela na parte das classes */
+
+    main > .propina > .tabela  > .caloiro > .classe{
+        font-size: 25px;
+    }
+
+    main > .propina > .tabela  > .caloiro > div > h1{
+        font-size: 18px;
+    }
+
+    /* Section vida escolar */
+
+    main > .escolar{
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+
+    main > .escolar > .texto{
+        width: 100%;
+        height: 45vh;
+        margin-bottom: 0;
+    }
+
+    main > .escolar > .texto > h1{
+        margin: 20px 0 0 20px;
+        font-size: 14px;
+    }
+
+    main > .escolar > .texto > h2{
+        font-size: 60px;
+        margin: 0 0 0 20px;
+    }
+
+    main > .escolar > .item{
+        width: 45%;
+        margin-top: -40px;
+    }
+
+    main > .escolar > .item > h1{
+        font-family: var(--font1);
+        font-weight: 600;
+        font-size: 27px;
+    }
+
+    /* Footer */
+
+    footer > .container{
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    /* A parte que tem o logotipo la no footer */
+
+    footer > .container > .logo{
+        width: 50%;
+    }
+
+    footer > .container > .logo > h1{
+        font-size: 27px;
+    }
+
+    /* O flebox do footer */
+
+    footer > .container > .flexbox{
+        width: 40%;
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 575.8px) {
+    header{
+        width: 100%;
+        height: 100px;
+        margin-top: -15px;
+        padding-bottom: 10px;
+    }
+
+    header > p{
+        font-size: 8px;
+        padding: 15px 0 015pxpx ;
+    }
+
+    /* Logo */
+
+    header > .logo > a > img{
+        width: 180px;
+        height: 60px;
+        top: 95px;
+        margin-left: 10%;
+        margin-top: 15px;
+    }
+
+    /* Navbar */
+
+    header > .nav{
+       width: 75%;
+       height: 300px;
+        position: absolute;
+       top: 15.5%;
+       right: 0;
+    }
+
+    header > .ativo{
+        display: block;
+    }
+  
+
+    header > .nav > ul{
+        width: 80%;
+    }
+    
+    header > .nav > ul > li{
+        margin-top: 15px;
+        text-shadow: none;
+        font-size: 14px;
+        border-bottom: .5px solid var(--cor1);
+    }
+    
+    header > .nav > ul > li > a{
+        font-size: 14px;
+        font-weight: 500;
+        padding-top: 20px;
+    }
+    
+    /* Menu burguer */
+
+    header > .burguer{
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+        margin-right: 4%;
+    }
+    
+    header > .burguer > span{
+        width: 30px;
+        height: 3px;
+    }
+
+
+    /* Imagem do fundo */
+
+    main > .hero{
+        max-height: 600px;
+    }
+
+    
+    main > .hero > .hero-conteudo{
+        width: 100%;
+        height: 80%;
+        z-index: 2;
+        padding: 100px 0px 0 0 ;
+    }
+    
+    main > .hero > .hero-conteudo > h1{
+        font-size: 50px;
+    }
+    
+    main > .hero > .hero-conteudo > h3 > button{
+        width: 30px;
+        margin:  0px 5px -5px 0px;
+    }
+    main > .hero > .hero-conteudo > h3> button >span{
+        width: 20px;
+    }
+
+    main > .hero > .hero-conteudo > .botoes{
+        width: 90%;
+        height: 60px;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    main > .hero > .hero-conteudo > .botoes > a > button{
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 10px;
+        height: 50px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+
+    main > .hero > .hero-conteudo > .botoes > a > .amarelo{
+        margin-right: 0px;
+        background-color: var(--cor2);
+        color: var(--cor1);
+    }
+
+    /* A parte da A nossa essência */
+
+    main > .essencia{
+        width: 100%;
+    }
+
+    main > .essencia > .paragrafo{
+        height: auto;
+        width: 100%;
+    }
+
+    main > .essencia > .paragrafo > h1{
+        margin-left: 20px;
+    }
+
+
+    main > .essencia > .paragrafo > p{
+        font-family: var(--font1);
+        font-weight: 600;
+        font-size: 40px;
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    main > .essencia > .paragrafo > div > p{
+        width: 95%;
+        margin-top: -20px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+
+    main > .essencia > .fe{
+        width: 90%;
+    }
+
+    main > .essencia > .fe > .item{
+        width: 95%;
+        margin-bottom: 40px;
+    }
+
+    main > .essencia > .fe > .item > img{
+        width: 100%;
+        height: 50%;
+        margin-bottom: 20px;
+    }
+
+    /* Flexbox da section oferta */
+
+    main > .oferta > .texto{
+        width: 100%;
+        height: 23%;
+        margin-bottom: 0;
+        margin-left: 10px;
+    }
+
+    main > .oferta > .texto > h1{
+        margin-left: 10px;
+    }
+
+    main > .oferta > .texto > h2{
+        font-size: 35px;
+        margin-top: 5px;
+        margin-bottom: 0;
+        margin-left: 10px;
+        width: 100%;
+    }
+    
+    main > .oferta > .texto > div{
+        margin-left: 10px;
+        margin-top: 0;
+        width: 90%;
+        margin-bottom: 20px;
+        float: left;
+    }
+
+    /* As caixas da section ofertas */
+
+
+    main > .oferta > .caixa > .item{
+        width: 90%;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    main > .oferta > .caixa > .item > h2{
+        font-size: 30px;
+    }
+
+    main > .oferta > .caixa > .item > img{
+        width: 100%;
+        height: 55%;
+    }
+
+    /* A section futuro */
+
+    main > .futuro{
+        padding-bottom: 40px;
+        height: auto;
+    }
+
+    main > .futuro > .texto{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    main > .futuro > .texto > h1{
+        margin-left: 20px;
+    }
+
+
+    main > .futuro > .texto > h2{
+        font-size: 35px;
+        margin: 0px 0 0px 20px;
+    }
+
+    main > .futuro > .texto > p{
+        margin: 20px 20px 0px 20px;
+    }
+
+
+    /* A div btn da section futuro */
+    main > .futuro > .btn{
+        width: 95%;
+        height: 180px;
+        margin-top: 0px;
+        margin: 0px 0 20px 10px;
+    }
+
+    main > .futuro > .btn > h2{
+        font-family: var(--font2);
+        font-weight: 500;
+        font-size: 16px;
+        color: var(--paragrafo);
+        margin: 0 0 30px 30px;
+    }
+
+
+    /* Section matricula */
+
+    main > .matricula > .titulo{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        position: none;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    main > .matricula > .titulo > h1{
+        font-size: 40px;
+    }
+
+    main > .matricula > .paragrafo{
+        width: 100%;
+        height: 50%;
+        background-color: transparent;
+        position: absolute;
+        right: 0;
+        bottom: -10%;
+    }
+
+    /* Section da tabela de precos */
+
+    main > .propina{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* A parte da incricao e reconfirmacao */
+
+    main > .propina > .inscricao{
+        width: 90%;
+        margin: auto;
+        height: 480px;
+        margin-bottom: 50px;
+    }
+
+    /* A parte da tabela de precos */
+
+    main > .propina > .tabela{
+        width: 90%;
+        float: none;
+        margin: auto;
+    }
+
+    main > .propina > .tabela > .head > .item{
+        font-size: 12px;
+    }
+
+    /* A parte do body da tabela na parte das classes */
+
+    main > .propina > .tabela  > .caloiro > .classe{
+        font-size: 18px;
+    }
+
+    main > .propina > .tabela  > .caloiro > div > h1{
+        font-size: 14px;
+    }
+
+    /* Section vida escolar */
+
+    main > .escolar{
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+
+    main > .escolar > .texto{
+        width: 100%;
+        height: 30vh;
+        margin-bottom: 0;
+    }
+
+    main > .escolar > .texto > h1{
+        margin: 20px 0 10px 20px;
+        font-size: 14px;
+    }
+
+    main > .escolar > .texto > h2{
+        font-size: 40px;
+        margin: 0 0 0 20px;
+    }
+
+    main > .escolar > .item{
+        padding-top: 20px;
+        width: 90%;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    main > .escolar > .item > h1{
+        font-family: var(--font1);
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+    /* Footer */
+
+    footer > .container{
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    /* A parte que tem o logotipo la no footer */
+
+    footer > .container > .logo{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    footer > .container > .logo > img {
+        width: 100%;
+        height: 90px;
+    }
+
+    footer > .container > .logo > h1{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    /* O flebox do footer */
+
+    footer > .container > .flexbox{
+        width: 90%;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    footer > .fim > div{
+        width: 100%;
+        text-align: center;
+    }
+}

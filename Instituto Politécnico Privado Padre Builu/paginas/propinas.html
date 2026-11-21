@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/instituto.css">
+    <link rel="stylesheet" href="../estilos/contactos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap" rel="stylesheet">
+    <title>Propinas — Instituto Médio Politécnico Privado Padre Builu</title>
+    <style>
+        main > .propina {
+            width: 94%;
+            padding: 40px;
+            background-color: #FBF9F3;
+            border-top: 1px solid #C5C1BB;
+            padding-top: 80px;
+        }
+
+        main > .box{
+            width: 100%;
+            height: auto;
+            padding: 90px 0 30px 0 ;
+            background-color: transparent;
+            border-top: 1px solid #C5C1BB;
+        }
+
+        main > .box > div{
+            width: 90%;
+            margin: auto;
+            height: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        main > .box > div >.flexbox{
+            width: 29%;
+            padding: 20px 0 20px 0;
+            height: auto;
+            background-color: transparent;
+            margin-bottom: 30px;
+            border-top: 2px solid #D5B365;
+        }
+
+        main > .box > div >.flexbox > svg{
+            width: 30px;
+            height: 30px;
+            color: #601F1B;
+        }
+
+        main > .box > div >.flexbox > h1{
+            font-family: "Noto Sans Georgian", ; 
+            font-size: 25px; 
+            font-weight: 600;
+            color: #601F1B;
+        }
+
+        main > .box > div >.flexbox > p{
+            font-size: 14px;
+            font-weight: 500;
+            font-family: "Manrope", sans-serif;
+            line-height: 1.5;
+        }
+
+        @media screen and (max-width:992px){
+            main > .propina {
+                width: 91.5%;
+                background-color: #FBF9F3;
+                border-top: 1px solid #C5C1BB;
+                padding-top: 80px;
+            }
+        }
+
+        @media screen and (max-width:575.8px){
+
+            main > .propina {
+                width: 84%;
+                background-color: #FBF9F3;
+                border-top: 1px solid #C5C1BB;
+                padding-top: 80px;
+            }
+
+            main > .propina > .inscricao{
+                width: 100%;
+            }
+
+            main > .propina > .tabela{
+                width: 100%;
+            }
+
+            main > .box{
+                width: 100%;
+                height: auto;
+                padding: 90px 0 30px 0 ;
+                background-color: transparent;
+                border-top: 1px solid #C5C1BB;
+            }
+
+            main > .box > div{
+                width: 89%;
+                margin: auto;
+                height: 100%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: none;
+            }
+            main > .box > div >.flexbox{
+                width: 100%;
+                padding: 20px 0 0px 0;
+                height: auto;
+                background-color: transparent;
+                margin-bottom: 30px;
+                border-top: 2px solid #D5B365;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img src="../imagens/logo.png" alt="logo"></a>
+        </div>
+
+        <button class="burguer" id="burguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <nav class="nav" id="menu">
+            <ul>
+                <li><a href="../index.html">INÍCIO</a></li>
+                <li><a href="instituto.html">O INSTITUTO</a></li>
+                <li><a href="cursos.html">CURSOS</a></li>
+                <li><a href="../index.html #escolar">VIDA ESCOLAR</a></li>
+                <li><a href="contactos.html">CONTACTOS</a></li>
+            </ul>
+            <a href="../paginas/post.html" class="btn">NOTÍCIAS</a>
+        </nav>
+        <script src="../interacao/script2.js"></script>
+    </header>
+    <main>
+        <section class="inicial">
+            <h1>PROPINAS E MATRÍCULAS</h1>
+            <H2>Propinas</H2>
+            <P>Valores apresentados a título demonstrativo. Confirme as taxas vigentes junto da secretaria antes de efetuar qualquer pagamento.</P>
+        </section>
+
+        <section class="propina" id="propinas">
+            <article class="inscricao">
+                <div class="head">
+                    <p>INSCRIÇÃO E RECONFIRMAÇÃO</p>
+                </div>
+                <div class="novo">
+                    <p>INCRIÇÃO (NOVOS ALUNOS)</p>
+                    <h1>25.000 Kz</h1>
+                    <p>entrada na 10ª classe ou transferência</p>
+                </div>
+                <div class="instituto">
+                    <p>RECONFIRMAÇÃO (ALUNOS DO INSTITUTO)</p>
+                    <h1>15.000 Kz</h1>
+                    <p>reconfirmação de lugar a cada ano letivo</p>
+                </div>
+                <div class="botao">
+                    <p>Pagamento único por ano letivo</p>
+                    <p>Inclui seguro escolar e ficha do aluno</p>
+                    <a href="paginas/matricula.html"><button>Iniciar Inscrição <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right size-4" aria-hidden="true" data-tsd-source="/src/routes/index.tsx:143:186"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button></a>
+                </div>
+            </article>
+
+            <article class="tabela">
+                <div class="head">
+                    <div class="item">CLASSE</div>
+                    <div class="item">PROPINA MENSAL</div>
+                    <div class="item">PAGAMENTO ANUAL</div>
+                </div>
+
+                <div class="caloiro">
+                    <div class="classe">10ª Classe</div>
+                    <div>
+                        <h1>15.000kz</h1>
+                        <p>10 MESES</p>
+                    </div>
+                    <div class="descontos">
+                        <h1>150.000 Kz</h1>
+                        <p>COM DESCONTOS</p>
+                    </div>
+                </div>
+
+                <div class="caloiro">
+                    <div id="classe" class="classe">11ª Classe</div>
+                    <div>
+                        <h1>16.000kz</h1>
+                        <p>10 MESES</p>
+                    </div>
+                    <div class="descontos">
+                        <h1>160.000 Kz</h1>
+                        <p>COM DESCONTOS</p>
+                    </div>
+                </div>
+
+                <div class="caloiro">
+                    <div id="classe" class="classe">12ª Classe</div>
+                    <div>
+                        <h1>17.000kz</h1>
+                        <p>10 MESES</p>
+                    </div>
+                    <div class="descontos">
+                        <h1>170.000 Kz</h1>
+                        <p>COM DESCONTOS</p>
+                    </div>
+                </div>
+
+                <div class="caloiro">
+                    <div id="classe" class="classe">13ª Classe</div>
+                    <div>
+                        <h1>18.000kz</h1>
+                        <p>10 MESES</p>
+                    </div>
+                    <div class="descontos">
+                        <h1>180.000 Kz</h1>
+                        <p>COM DESCONTOS</p>
+                    </div>
+                </div>
+                <div class="para">
+                    Os valores são demonstrativos e podem ser ajustados pela direção. Descontos para irmãos e pagamento anual à vista — confirme na secretaria.
+                </div>
+            </article>
+        </section>
+
+        <section class="box">
+            <div>
+                <div class="flexbox">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-banknote size-7 text-primary" aria-hidden="true" data-tsd-source="/src/routes/propinas.tsx:85:15"><rect width="20" height="12" x="2" y="6" rx="2"></rect><circle cx="12" cy="12" r="2"></circle><path d="M6 12h.01M18 12h.01"></path></svg>
+                    <h1>Formas de pagamento</h1>
+                    <p>Por via institucional na secretaria da escola ou através de transferência bancária e pagamento automático (TPA / Multicaixa)</p>
+                </div>
+
+                <div class="flexbox">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-check size-7 text-primary" aria-hidden="true" data-tsd-source="/src/routes/propinas.tsx:90:15"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="m9 16 2 2 4-4"></path></svg>
+                    <h1>Prazos</h1>
+                    <p>As propinas mensais devem ser liquidadas até ao dia indicado pela direção no início de cada mês letivo.</p>
+                </div>
+
+                <div class="flexbox">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-receipt size-7 text-primary" aria-hidden="true" data-tsd-source="/src/routes/propinas.tsx:95:15"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"></path><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path><path d="M12 17.5v-11"></path></svg>
+                    <h1>Recibos</h1>
+                    <p>Todo o pagamento é confirmado com recibo oficial da secretaria — guarde-o como comprovativo.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<footer>
+        <div class="container">
+            <div class="logo">
+                <img src="../imagens/logo.png" alt="pb">
+                <h1>“Fé, Disciplina e Ciência”</h1>
+            </div>
+            <div class="flexbox">
+                <h1>CONTACTOS</h1>
+                <p><a href="#">+244 926 873 381</a></p>
+                <p><a href="#">+244 931 962 062</a></p>
+                <P><a href="#">infobuilo@gmail.com</a></P>
+                <p><a href="#">padrebuilu.com</a></p>
+            </div>
+            <div class="flexbox">
+                <h1>ENDEREÇO</h1>
+                <a href="">
+                    <p><a href="https://www.google.com/maps/place/Instituto+Polit%C3%A9cnico+Privado+Padre+Builo/@-5.5526592,12.2339098,17.76z/data=!4m14!1m7!3m6!1s0x1a5dd3667ba83a33:0xdd706824c22cd47a!2sInstituto+Polit%C3%A9cnico+Privado+Padre+Builo!8m2!3d-5.5523788!4d12.2343674!16s%2Fg%2F11ptr4z4rl!3m5!1s0x1a5dd3667ba83a33:0xdd706824c22cd47a!8m2!3d-5.5523788!4d12.2343674!16s%2Fg%2F11ptr4z4rl?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D">Rua do Comércio, Cabassango, junto ao Largo da República, Cabinda</a></p>
+                </a>
+            </div>
+        </div>
+
+        <div class="fim">
+            <div>
+                <p>© 2026 Instituto Médio Politécnico Privado Padre Builu.</p>
+            </div>
+            <div>
+                <p>Informações institucionais sujeitas a confirmação.</p>
+            </div>
+        </div>
+    </footer>
+</html>

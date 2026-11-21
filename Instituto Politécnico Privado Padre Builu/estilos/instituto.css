@@ -1,0 +1,448 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #601F1B;
+    --cor2: #D5B365;
+    --amarelo: #cf9f62;
+    --bt-hover: #78423B;
+    --body-color: #FBF9F3;
+    --section-color: #EFEAE2;
+    --paragrafo: #C5C1BB;
+    --font1: "Noto Sans Georgian", ;
+    --font2: "Manrope", sans-serif;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--section-color);
+}
+
+header{
+    height: 90px;
+}
+
+/* A section inicail de todas as paginas auxiliares */
+main > .inicial{
+    background-color: transparent;
+    height: 250px;
+    width: 100%;
+    margin-top: 150px;
+}
+
+main > .inicial > h1{
+    margin: 0 0 10px 60px;
+    font-size: 12px;
+    font-family: var(--font2);
+    color: var(--cor1);
+}
+
+main > .inicial > h2{
+    margin: 0 0 0 60px;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: var(--font1);
+}
+
+main > .inicial > p{
+    margin: 20px 0 0 60px ;
+    font-size: 16px;
+    font-family: var(--font2);
+    color: var(--suave);
+    width: 50%;
+}
+
+/* A section historia da para instituto */
+
+main > .historia{
+    width: 100%;
+    height: 350px;
+    padding-top: 60px;
+    background-color: var(--body-color);
+    margin-top: -10px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--paragrafo);
+    border-top: 1px solid var(--paragrafo);
+}
+
+main > .historia > div{
+    background-color: transparent;
+    width: 90%;
+    height: 80%;
+    margin: auto;
+}
+main > .historia > div > h1{
+    font-family: var(--font2);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cor1);
+}
+
+main > .historia > div > h2{
+    margin-top: 10px;
+    font-family: var(--font1);
+    font-size: 40px;
+    font-size: 600;
+}
+
+main > .historia > div > .para{
+    width: 60%;
+    height: 100%;
+    background-color: transparent;
+    float: right;
+    margin-top: -110px;
+}
+
+
+main > .historia > div > .para > p{
+    font-family: var(--font2);
+    font-size: 16px;
+    line-height: 2;
+}
+
+/* Antes do flexbox a frase a cima */
+
+
+main  >  .par{
+    width: 90%;
+    height: 40px;
+    display: block;
+    background-color: transparent;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+main >  .par > h1{
+    color: var(--cor1);
+    font-family: var(--font2);
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 60px;
+    display: block;
+}
+
+/* Flexbox da missao da pagina instituto */
+
+main > .missao{
+    background-color: transparent;
+    height: auto;
+    width: 100%;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-evenly;
+}
+
+main  > .missao > .flexbox{
+    padding: 20px;
+    background-color: var(--body-color);
+    width: 340px;
+    height: 210px;
+    display: block;
+    border-top: 2px solid var(--cor2);
+}
+
+
+main  > .missao > .flexbox > svg{
+    width: 30px;
+    height: 30px;
+    color: var(--cor1);
+}
+
+main  > .missao > .flexbox > h1{
+    font-family: var(--font1);
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--cor1);
+}
+
+main  > .missao > .flexbox > p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: black;
+    font-size: 16px;
+}
+
+/* Setion caixa da pagina instituto */
+
+main > .caixas{
+    border-top: 1px solid var(--paragrafo);
+    width: 100%;
+    height: auto;
+    padding: 100px 0 0px 0;
+    background-color: var(--body-color);
+}
+
+main > .caixas > .caixa{
+    background-color: transparent;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+main > .caixas > .caixa > .itens{
+    width: 45%;
+    padding: 30px 20px 20px 20px;
+    height: 200px;
+    background-color: transparent;
+    margin-bottom: 20px;
+    border-top: 1px solid var(--paragrafo);
+}
+
+main > .caixas > .caixa > .itens > svg{
+    width: 30px;
+    height: 30px;
+    color: var(--cor1);
+}
+
+main > .caixas > .caixa > .itens > h1{
+    font-family: var(--font1);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+main > .caixas > .caixa > .itens > p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+/* A section venha da pagina instituto */
+
+main > .venha{
+    background-color: var(--cor1);
+    margin-top: -20px;
+    height: auto;
+    width: 100%;
+    padding: 50px 0 50px 0;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+main > .venha > div{
+    background-color: transparent;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+main > .venha > div > .texto{
+    background-color: transparent;
+    width: 40%;
+}
+
+main > .venha > div > .texto > h1{
+    font-family: var(--font1);
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+
+main > .venha > div > .texto > p{
+    color: white;
+    font-family: var(--font2);
+    line-height: 1.5;
+}
+
+main > .venha > div > .btn{
+    width: 40%;
+    background-color: transparent;
+    float: right;
+    height: 60px;
+    margin-top: -100px;
+    text-align: right;
+    padding-top: 20px;
+}
+
+main > .venha > div > .btn > a{
+    text-align: center;
+    width: 270px;
+    height: 30px;
+    padding: 15px 30px 15px 30px;
+    background-color: var(--cor2);
+    margin: 10px 0 0px 0px;
+    color: var(--cor1);
+    font-family: var(--font2);
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    text-decoration: none;
+}
+
+main > .venha > div > .btn > a:hover{
+    background-color: var(--amarelo);
+}
+
+main > .venha > div > .btn > a > svg{
+    margin: 0 0 -8px 5px;
+}
+
+@media screen and (max-width: 992px){
+
+    main > .inicial{
+        height: 230px;
+    }
+
+    main > .inicial > h1{
+        margin: 0 0 10px 30px;
+    }
+
+    main > .inicial > h2{
+        margin: 0 0 10px 30px;
+    }
+
+    main > .inicial > p{
+        margin: 0 0 10px 30px;
+        width: 70%;
+    }
+
+    main > .historia > div > .para{
+        width: 100%;
+        float: left;
+        margin-top: -30px;
+    }
+
+    main > .historia > div{
+        width: 95%;
+    }
+
+    main >  .par > h1{
+        color: var(--cor1);
+        font-family: var(--font2);
+        font-weight: 600;
+        font-size: 14px;
+        margin-left: 30px;
+        display: block;
+    }
+
+
+    main  > .missao > .flexbox{
+        padding: 20px;
+        width: 25%;
+        height: 230px;
+        display: block;
+    }
+
+    main > .caixas > .caixa{
+        width: 95%;
+    }
+
+    main > .caixas > .caixa > .itens{
+        width: 100%;
+        height: 150px;
+    }
+
+    
+    main > .venha > div{
+        width: 90%;
+    }
+
+    main > .venha > div > .texto{
+        width: 60%;
+    }
+
+    main > .venha > div > .btn{
+        width: 30%;
+        background-color: transparent;
+        float: right;
+        height: 60px;
+        margin-top: -90px;
+        text-align: right;
+        padding-top: 20px;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 575.8px){
+
+    main > .inicial{
+        width: 80%;
+    }
+
+    main > .inicial > h1{
+        margin: 0 0 10px 20px;
+    }
+
+    main > .inicial > h2{
+        margin: 0 0 10px 20px;
+        font-size: 40px;
+    }
+
+    main > .inicial > p{
+        margin: 0 0 10px 20px;
+        width: 100%;
+    }
+
+    main > .historia{
+        height: 470px;
+    }
+    
+    main > .historia > div{
+        width: 95%;
+    }
+
+
+    main > .historia > div > h2{
+        font-size: 30px;
+    }
+
+
+    main > .historia > div > .para{
+        width: 100%;
+        margin-top: -30px;
+    }
+
+
+    main >  .par > h1{
+        margin-left: 15px;
+        margin-bottom: 0px;
+    }
+
+
+    main  > .missao{
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    main  > .missao > .flexbox{
+        width: 80%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    main > .caixas > .caixa{
+        width: 95%;
+    }
+
+    main > .caixas > .caixa > .itens{
+        width: 100%;
+        height: 170px;
+    }
+
+    main  > .venha{
+        height: 220px;
+    }
+
+    main > .venha > div{
+        width: 90%;
+    }
+
+    main > .venha > div > .texto{
+        width: 100%;
+    }
+
+    main > .venha > div > .btn{
+        width: 100%;
+        float: left;
+        margin-top: 0px;
+        text-align: left;
+    }
+
+    
+}

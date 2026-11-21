@@ -1,0 +1,249 @@
+@charset "UTF-8";
+
+
+header{
+    height: 125px;
+}
+
+.nav > .btn{
+    padding-bottom: 30px;
+}
+
+.unica{
+    width: 100%;
+    height: auto;
+    padding: 50px 0 50px 0;
+    background-color: var(--body-color);
+    border-top: 1px solid var(--paragrafo);
+    display: flex;
+}
+
+.tudo{
+    width: 90%;
+    margin: auto;
+}
+
+/* Formulario de Matriculas */
+
+    * { 
+        box-sizing: border-box; 
+    }
+
+    body {
+      color: var(--texto);
+      padding: 2.5rem 1.25rem;
+    }
+
+    .matricula {
+        width: 70%; 
+        float: left;
+        height: auto; 
+        margin: 0 ; 
+    }
+
+    .matricula div h1 {
+      font-family: var(--font1);
+      font-weight: 700;
+      font-size: 35px;
+      color: var(--cor1);
+      margin-left: 15px;
+    }
+    
+    .matricula div p {
+        margin-left: 15px;
+        font-size: 16px;
+        color: var(--suave);
+        font-family: var(--font2);
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    fieldset { border: none; display: grid; gap: 1rem; font-family: var(--font2); }
+    legend { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    .linha { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .campo { display: flex; flex-direction: column; gap: 5px; }
+    label { font-size: 14px; font-weight: 500; font-family: var(--font2);}
+    input, select {
+      font-family: var(--font2);
+      font-size: 14px;
+      color: var(--texto);
+      background: transparent;
+      border: 1px solid var(--borda);
+      border-radius: 3px;
+      padding: 0.6rem 0.75rem;
+      width: 100%;
+      outline: none;
+      box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
+    }
+    input::placeholder { color: var(--suave); }
+    input:focus, select:focus {
+      border-color: var(--primaria);
+    }
+
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      color: var(--suave);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238a7a72' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+      padding-right: 2rem;
+    }
+
+    select > option:hover{
+      background-color:  #F4DDB6;
+      width: 90%;
+      border-radius: 5px;
+      margin: 5px 0 5PX;
+    }
+
+    select:valid { color: var(--texto); }
+
+    button {
+      margin-top: 0.75rem;
+      margin-left: 15px;
+      width: 97%;
+      font-family: var(--font2);
+      font-weight: 500;
+      font-size: 14px;
+      color: #fff;
+      background-color: var(--cor1);
+      border: none;
+      padding: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover { background: var(--bt-hover); }
+
+    .matricula  small {
+        display: block;
+        text-align: center;
+        font-family: var(--font2);
+        font-size: 14px;
+        color: var(--suave);
+        margin-top: 20px;
+    }
+
+    @media (max-width: 560px) { .linha { grid-template-columns: 1fr; } }
+
+.flexbox{
+    width: 30%;
+    background-color: transparent;
+    float: right; 
+}
+
+.flexbox > div > div > svg{
+    color: var(--cor1);
+    width: 30px;
+    height: 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.flexbox > div{
+    padding-top: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.flexbox > div > .caixa{
+    margin-top: 30px;
+    padding-left: 20px;
+    background-color: transparent;
+}
+
+.flexbox > div > div > h1{
+    font-family: var(--font1);
+    font-size: 22px;
+    font-weight: 500;
+    margin: 5px 0 5px 0;
+    color: var(--cor1);
+}
+
+.flexbox > div > div > p{
+    font-family: var(--font2);
+    color: var(--suave);
+    font-size: 14px;
+}
+
+.flexbox > div > div > a{
+    text-decoration: none;
+    font-family: var(--font2);
+    font-weight: 600;
+    color: var(--cor1);
+    font-size: 14px;
+}
+
+
+@media (max-width: 992px){
+
+    header{
+        height: 110px;
+    }
+
+    header > .burguer{
+        margin-right: 4%;
+        margin-top: -10px;
+    }
+
+    header > .burguer:hover{
+        background-color: transparent;
+    }
+    
+    
+    .matricula{
+        width: 110%;
+        margin-left: -25px;
+        background-color: transparent;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .flexbox{
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .flexbox > div{
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    .flexbox > div > .caixa{
+        width: 48%;
+        margin-top: 0px;
+        padding-left: 0px;
+    }
+}
+
+
+@media screen and (max-width:575.8px) {
+    header > .burguer{
+        margin-right: 6%;
+        margin-top: -5px;
+    }
+
+    .matricula{
+        width: 110%;
+        margin-left: -20px;
+        background-color: transparent;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .matricula div h1 {
+        font-size: 30px;
+    }
+
+    button {
+        margin-left: 10px;
+        width: 95%;
+    }
+
+    .flexbox > div > .caixa{
+        width: 90%;
+        margin-top: 20px;
+        padding-left: 0px;
+    }
+}

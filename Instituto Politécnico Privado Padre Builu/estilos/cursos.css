@@ -1,0 +1,283 @@
+.cursos{
+    padding: 10px 0 10px 0;
+    background-color: var(--body-color);
+    border-top: 1px solid var(--paragrafo);
+}
+
+.container {
+    display: flex;
+    background-color: var(--body-color);
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 0px 0 30px 0px;
+}
+
+#ti > .container{
+    margin-top: 40px;
+}
+
+#et, #pq, #eie, #dp, #fi{
+    border-top:  none;
+}
+
+
+.imagem{
+    width: 100%;
+    height: 100%;
+}
+
+.imagem > img{
+    width: 100%;
+    border: 1px solid var(--paragrafo);
+    height: 110%;
+    margin-left: 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.texto {
+    margin-left: 40px;
+    text-align: left;
+    align-items: left;
+    width: 100%;
+    background-color: transparent;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto > .curso{
+    color: var(--cor1);
+    font-size: 12px;
+    font-family: var(--font2);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.texto > .titulo {
+    color: black;
+    font-size: 35px;
+    font-family: var(--font1);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.texto > p {
+    color: #555;
+    font-size: 16px;
+    font-family: var(--font2);
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.duracao  svg {
+    width: 20px;
+    height: 20px;
+    color: var(--cor1);
+}
+.duracao{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+    font-size: 16px;
+    font-family: var(--font2);
+    margin-bottom: 35px;
+}
+
+
+.detalhes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.detalhes > div > h2 {
+    color: var(--cor1);
+    font-size: 16px;
+    font-family: var(--font2);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.lista{
+    list-style: none;  
+    background-color: transparent;
+    flex-flow: row wrap;
+    text-align: left;
+}
+
+
+
+
+.item{
+    text-align: left;
+    color: #444;
+    font-family: var(--font2);
+    font-size: 16px;
+    margin-bottom: 10px;
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+.item > svg{
+    color: var(--cor2);
+    font-size: 5px;
+    margin-bottom: -8px;
+}
+
+
+.btn > button{
+    align-items: center;
+    justify-content: center;
+    border: none;
+    gap: 10px;
+    background-color: var(--cor1);
+    font-family: var(--font2);
+    color: white;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.btn > button > svg{
+    margin: 0 0 -8px 5px;
+}
+
+.btn > button:hover{
+    background-color: var(--bt-hover);
+}
+
+/* O article de flexbox do fim da pagina cursos */
+
+.apredizagem{
+    width: 100%;
+    height: auto;
+    border-top: 1px solid var(--paragrafo);
+    border-bottom: 1px solid var(--paragrafo);
+    padding: 70px 0 70px 0;
+}
+
+.apredizagem > div{
+    background-color:transparent;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    display: flex;
+}
+
+.apredizagem > div > .box{
+    width: 45%;
+    padding: 20px;
+    border-top: 2px solid var(--cor2);
+    background-color: transparent;
+}
+
+.apredizagem > div > .box > svg {
+    width: 25px;
+    height: 25px;
+    color: var(--cor1);
+}
+
+.apredizagem > div > .box > h1{
+    font-family: var(--font1);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.apredizagem > div > .box > p{
+    font-family: var(--font2);
+    font-size: 14px;
+    color: #444;
+}
+
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+    }
+    .image-section {
+        min-height: 250px;
+    }
+    .details-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .content-section {
+        padding: 25px;
+    }
+
+    .imagem > img{
+        margin-left: 0px;
+        width: 95%;
+        height: 90%;
+    }
+
+    .texto {
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        flex-direction: column;
+    }
+
+    .apredizagem > div{
+        width: 95%;
+    }
+
+    .apredizagem > div > .box{
+        width: 43%;
+    }
+}
+
+@media (max-width: 575.8px) {
+    .container {
+        flex-direction: column;
+    }
+    .image-section {
+        min-height: 250px;
+    }
+    .details-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .content-section {
+        padding: 25px;
+    }
+
+    .imagem > img{
+        margin-left: 0px;
+        width: 95%;
+        height: 100%;
+    }
+
+
+    .texto {
+        width: 90%;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+        flex-direction: column;
+    }
+
+    .detalhes {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+    .apredizagem > div{
+        width: 95%;
+    }
+
+    .apredizagem > div > .box{
+        width: 100%;
+    }
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/matricula.css">
+    <link rel="stylesheet" href="../estilos/instituto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap" rel="stylesheet">
+    <title>Matrículas - Instituto Médio Politécnico Privado Padre Builu</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img src="../imagens/logo.png" alt="logo"></a>
+        </div>
+
+        <button class="burguer" id="burguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <nav class="nav" id="menu">
+            <ul>
+                <li><a href="../index.html">INÍCIO</a></li>
+                <li><a href="instituto.html">O INSTITUTO</a></li>
+                <li><a href="cursos.html">CURSOS</a></li>
+                <li><a href="../index.html #escolar">VIDA ESCOLAR</a></li>
+                <li><a href="propinas.html">PROPINAS</a></li>
+            </ul>
+            <a href="contactos.html" class="btn">CONTACTOS</a>
+        </nav>
+        <script src="../interacao/script2.js"></script>
+    </header>
+
+    <main>
+        <section class="inicial">
+            <h1>ADIMISSÕES</h1>
+            <H2>Matrículas</H2>
+            <P>Preencha o formulário para pedir a sua inscrição ou reconfirmação. A secretaria confirma a vaga, os documentos e os valores em vigor.</P>
+        </section>
+
+        <section class="unica">
+            <div class="tudo">
+
+        <section class="matricula" aria-labelledby="titulo-matricula">
+      <div>
+        <h1 id="titulo-matricula">Formulário de matrícula</h1>
+        <p>O pedido é registado no ecrã e entregue à secretaria para confirmação.</p>
+      </div>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Dados do aluno</legend>
+
+          <div class="campo">
+            <label for="nome">Nome completo do aluno</label>
+            <input type="text" id="nome" name="nome" placeholder="Ex.: Maria dos Santos" required>
+          </div>
+
+          <div class="linha">
+            <div class="campo">
+              <label for="nascimento">Data de nascimento</label>
+              <input type="date" id="nascimento" name="nascimento" required>
+            </div>
+            <div class="campo">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="9XX XXX XXX" required>
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="email">Email (opcional)</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@email.com" autocomplete="on">
+          </div>
+
+          <div class="linha">
+            <div class="campo">
+              <label for="classe">Classe pretendida</label>
+              <select id="classe" name="classe" required>
+                <option value="" disabled selected>Escolher</option>
+                <option>10ª Classe</option>
+                <option>11ª Classe</option>
+                <option>12ª Classe</option>
+                <option>13ª Classe</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="curso">Curso</label>
+              <select id="curso" name="curso" required>
+                <option value="" disabled selected>Escolher</option>
+                <option>Técnico de Informática</option>
+                <option>Electrónica e Telecomunicação</option>
+                <option>Petroquímica</option>
+                <option>Energia e Instalações Eléctricas</option>
+                <option>Desenho e Projecto</option>
+                <option>Técnico de Finanças</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="tipo">Tipo de matrícula</label>
+            <select id="tipo" name="tipo" required>
+              <option value="" disabled selected>Escolher</option>
+              <option>Inscrição - novo aluno (25.000kz)</option>
+              <option >Reconfirmação - aluno do instituto (15.000kz)</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="encarregado">Nome do encarregado de educação</label>
+            <input type="text" id="encarregado" name="encarregado" placeholder="Ex.: João dos Santos" required>
+          </div>
+        </fieldset>
+
+        <button type="submit">Enviar pedido de matrícula</button>
+        <small>Os dados são usados apenas para o contacto da secretaria.</small>
+      </form>
+
+    </section>
+
+                <article class="flexbox">
+                    <div>
+                        <div class="caixa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text size-7 text-primary" aria-hidden="true" data-tsd-source="/src/routes/matriculas.tsx:47:17"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+                            <h1>Documentos necessários</h1>
+                            <p>— Boletim de notas ou certificado anterior</p>
+                            <p>— Bilhete de identidade do aluno e do encarregado</p>
+                            <p>— Fotografias tipo passe</p>
+                            <p>— Comprovativo de pagamento da inscrição</p>
+                        </div>
+                        <div class="caixa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wallet size-7 text-primary" aria-hidden="true" data-tsd-source="/src/routes/matriculas.tsx:58:17"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"></path><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path></svg>
+                            <h1>Valores</h1>
+                            <p>— Inscrição (novo aluno): 25.000 Kz</p>
+                            <p>— Reconfirmação (aluno do instituto): 15.000 Kz</p>
+                            <a href="propinas.html #propinas">Ver tabela de propinas</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+<footer>
+        <div class="container">
+            <div class="logo">
+                <img src="../imagens/logo.png" alt="pb">
+                <h1>“Fé, Disciplina e Ciência”</h1>
+            </div>
+            <div class="flexbox">
+                <h1>CONTACTOS</h1>
+                <p><a href="#">+244 926 873 381</a></p>
+                <p><a href="#">+244 931 962 062</a></p>
+                <P><a href="#">infobuilo@gmail.com</a></P>
+                <p><a href="#">padrebuilu.com</a></p>
+            </div>
+            <div class="flexbox">
+                <h1>ENDEREÇO</h1>
+                <a href="">
+                    <p><a href="https://www.google.com/maps/place/Instituto+Polit%C3%A9cnico+Privado+Padre+Builo/@-5.5526592,12.2339098,17.76z/data=!4m14!1m7!3m6!1s0x1a5dd3667ba83a33:0xdd706824c22cd47a!2sInstituto+Polit%C3%A9cnico+Privado+Padre+Builo!8m2!3d-5.5523788!4d12.2343674!16s%2Fg%2F11ptr4z4rl!3m5!1s0x1a5dd3667ba83a33:0xdd706824c22cd47a!8m2!3d-5.5523788!4d12.2343674!16s%2Fg%2F11ptr4z4rl?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D">Rua do Comércio, Cabassango, junto ao Largo da República, Cabinda</a></p>
+                </a>
+            </div>
+        </div>
+
+        <div class="fim">
+            <div>
+                <p>© 2026 Instituto Médio Politécnico Privado Padre Builu.</p>
+            </div>
+            <div>
+                <p>Informações institucionais sujeitas a confirmação.</p>
+            </div>
+        </div>
+    </footer>
+</html>
